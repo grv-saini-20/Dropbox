@@ -11,8 +11,7 @@ function App() {
   }
 
   const handleDelete = (index: number) => {
-    alert(index)
-    files = files.filter((x,i) => i !== index )
+    setFiles(files => files.filter((_, i) => index !== i))
   }
 
   return (
